@@ -1,6 +1,6 @@
 # HMTL/CSS Code Guidelines
 
-Detailed below are style guidelines to be followed in HTML/CSS code, in addition to the General style guidelines.
+Detailed below are style guidelines to be followed in HTML/CSS code, in addition to the [General](general.md) style guidelines.
 
 ## Formatting
 

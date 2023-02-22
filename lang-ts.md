@@ -1,6 +1,6 @@
 # TypeScript Code Guidelines
 
-Detailed below are style guidelines to be followed in TypeScript and TSX code, in addition to the General style guidelines.
+Detailed below are style guidelines to be followed in TypeScript and TSX code, in addition to the [General](general.md) style guidelines.
 
 ## Formatting
 
