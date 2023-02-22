@@ -10,16 +10,16 @@ There is no strict limit on line length for HTML, but it is highly recommended t
 
 **Identation**
 
-CSS code should be idented block-style by 2 spaces.
+HTML and CSS code should be idented block-style by 2 spaces.
 
 Good example:
 ```css
 @keyframes gradient {
   0% {
-	  background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   100% {
-	  background-position: 100% 50%;
+    background-position: 100% 50%;
   }
 }
 ```

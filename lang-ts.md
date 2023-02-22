@@ -65,14 +65,35 @@ Good example:
 
 **Equality Operator**
 
-Prefer `===` over `==` where possible.
+Prefer `===` and `!==` over `==` and `!=` where possible.
 
 Good examples:
 * `str === 'abc'`
-* `x+1 === 3`
+* `x+1 !== 3`
+
+Bad examples:
+* `x == y ? 1 : 2`
+* `str != '123'`
+
+**Trailing Commas**
+
+There should not be trailing commas in arrays and objects.
+
+Good example:
+```tsx
+{
+  candies: [1, 2, 3],
+  cookies: true
+}
+```
 
 Bad example:
-* `x == y ? 1 : 2`
+```tsx
+{
+  candies: [1, 2, 3,],
+  cookies: true,
+}
+```
 
 ## Imports
 
@@ -145,11 +166,45 @@ Bad examples:
 
 **Variable Declarations**
 
+Declare variables with `const` if possible. If the variable will be reassigned, use `let`. Never use `var` as it can result in funny behavior.
+
 Types do not need to be declared for variables. However, if the type is unique and declaring the type enhances code clarity, please add a type.
+
+If the type can be trivially inferred (ex. assigned to a literal upon declaration), do not declare the type.
+
+Good examples:
+* `const myvar: Transport = createTransport();`
+* `let abc = 20;`
+
+Bad examples:
+* `const i: number = 10;`
+* `let s: string = 'I declare code';`
+* `var x = 15;`
+
+**Forbidden Types**
+
+The following types should never be used:
+* `null`
+* `undefined`
+* `Number`
+* `String`
+* `Boolean`
+
+## Functions
 
 **Function Parameters**
 
 Types should be declared for function parameters, so that callers know what to expect. Avoid using the `any` type if possible.
+
+**Function Return Types**
+
+Declare return types for all functions that return data, unless the return type is unknown.
+
+**Function Declarations**
+
+Use the `function()` declaration if a function is top-level.
+
+Use arrow functions for all other declarations.
 
 ## Interfaces and Custom Types
 
