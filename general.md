@@ -124,6 +124,14 @@ Good examples:
 * `JavaClass101`
 * `I_AM_A_CONSTANT`
 
+## Functions
+
+**Parameters**
+
+Only include parameters that are used in the function. Do not take unnecessary parameters as that obfuscates the code.
+
+Unless absolutely necessary, functions should not take more than 10 parameters. As the saying goes, "if you have to include more than 10 parameters, you probably forgetting some more".
+
 ## Comments
 
 **Doc Comments**
