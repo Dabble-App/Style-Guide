@@ -1,5 +1,7 @@
 # HMTL/CSS Code Guidelines
 
+Detailed below are style guidelines to be followed in HTML/CSS code, in addition to the General style guidelines.
+
 ## Formatting
 
 **Line Character Limit**
@@ -42,6 +44,10 @@ Bad examples:
 Use concise but descriptive names for CSS identifiers. If the style can be generalized to more places, use a more general name so that the style can be used in more places.
 
 ## CSS Styling
+
+**Inline Styling**
+
+Avoid inline styling where possible.
 
 **Shorthand Properties**
 
